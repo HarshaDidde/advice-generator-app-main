@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit&display=swap');
+
+*{
+    font-family: 'Outfit', sans-serif;
+}
+
+body{
+    height: 100vh;
+    background-color: hsl(218, 23%, 16%);
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.container{
+    border-radius: 10px;
+    width: 450px;
+    min-width: 300px;
+    background-color: hsl(217, 19%, 24%);
+    padding-top: 10px;
+    padding-bottom: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+}
+
+.divider{
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+    margin-bottom: 40px;
+}
+
+.divider-desktop{
+    width: 380px;
+}
+
+.dice-button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    background-color:hsl(150, 100%, 66%);
+    position:absolute;
+    bottom: -25px;
+}
+
+.dice-button:hover{
+    cursor: pointer;
+    box-shadow: 0px 0px 20px hsl(150, 100%, 66%);
+}
+
+.dice-button img{
+    height: 20px;
+    width: 20px;
+}
+
+.advice-heading{
+    font-size: 10px;
+    letter-spacing: 3px;
+    font-weight:600;
+    color: hsl(150, 100%, 66%);
+    margin-top: 25px;
+}
+
+.advice{
+   color: hsl(193, 38%, 86%);
+   font-size: 26px;
+   font-weight: 550;
+   text-align: center;
+   margin-left: 25px;
+   margin-right: 25px;
+   padding-top: 20px;
+   padding-bottom: 20px;
+}
+
+.divider-mobile{
+    display: none;
+}
+
+@media only screen and (max-width: 375px) {
+    .container{
+        width: 300px;
+    } 
+
+    .divider-desktop{
+        display: none;
+    }
+
+    .divider-mobile{
+        display: block;
+        width: 260px;
+    }
+}
